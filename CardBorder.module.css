@@ -1,0 +1,114 @@
+.borderOne {
+    height: 50%;
+    width: 15%;
+    position: absolute;
+}
+
+.borderOne::before,
+.borderOne::after,
+.borderTwo::before,
+.borderTwo::after,
+.borderThree::before,
+.borderThree::after,
+.borderFour::before,
+.borderFour::after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+}
+
+.borderOne::before {
+    top: -10px;
+    left: -10px;
+    height: 100%;
+    width: 4px;
+    background: linear-gradient(to bottom, #ff0055, transparent);
+    border-top-left-radius: 50px;
+}
+
+.borderOne::after {
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #ff0055, transparent);
+    border-top-left-radius: 50px;
+}
+
+.borderTwo {
+    height: 50%;
+    width: 15%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.borderTwo::before {
+    bottom: -10px;
+    right: -10px;
+    height: 100%;
+    width: 4px;
+    background: linear-gradient(to top, #ff0055, transparent);
+    border-bottom-right-radius: 50px;
+}
+
+.borderTwo::after {
+    bottom: -10px;
+    right: -10px;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to left, #ff0055, transparent);
+    border-bottom-right-radius: 50px;
+}
+
+.borderThree {
+    height: 15%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.borderThree::before {
+    top: -10px;
+    right: -10px;
+    height: 100%;
+    width: 4px;
+    background: linear-gradient(to bottom, #00eeff, transparent);
+    border-top-right-radius: 50px;
+}
+
+.borderThree::after {
+    top: -10px;
+    right: -10px;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to left, #00eeff, transparent);
+    border-top-right-radius: 50px;
+}
+
+.borderFour {
+    height: 15%;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.borderFour::before {
+    bottom: -10px;
+    left: -10px;
+    height: 100%;
+    width: 4px;
+    background: linear-gradient(to top, #00eeff, transparent);
+    border-bottom-left-radius: 50px;
+}
+
+.borderFour::after {
+    bottom: -10px;
+    left: -10px;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #00eeff, transparent);
+    border-bottom-left-radius: 50px;
+}
